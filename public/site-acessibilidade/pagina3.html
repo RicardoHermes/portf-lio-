@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Inclusão Digital</title>
+    <meta name="description" content="Neste site abordaremos asuntos da importância e de como é feito a inclusão digital para pessoas com deficiencia ou sem acesso a informatica básica">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <title>Página de Contato</title>
+        <script>
+        document.addEventListener( 'submit', function( event ) {
+            event.preventDefault();
+            alert( 'Mensagem enviada com sucesso!' );
+            document.getElementById('formulario').reset();
+            location.reload();
+        }, false );
+        </script>
+        
+        
+</head>
+<body>
+    <div class="header">
+        <div class="nav-bar">
+            <nav>       
+    <button class="home" onclick="textToAudio()">Ler Texto</button>
+    <button class="home" role="button" aria-label="Voltar para a página inicial" onclick="window.location.href='index.html'">Clique aqui para voltar a página inicial</button>
+            </nav>
+        </div>
+    </div>
+       <div class="container-cadastro">
+       
+        <div class="texto">
+        <h1>Inclusão digital no Brasil e no mundo são importantes:</h1>        
+            <p>Pensando nisso montamos está página para você entrar em contato conosco. Deixe seu FeedBack, critica sujestão ou até assuntos que poderão ser abordados futuramente:</p>            
+            <h1>Entre em Contato</h1>
+           
+            <div id="contato">
+                <div class="title">Contato</div>
+                <div id="container_formulario">
+                    <h4>Envie uma  mensagem:</h4>
+
+                    <form action="https://formsubmit.co/5f73cecd7eb213e87601f31da73f267c" method="POST">
+                        <input type="text" placeholder="Nome*" name="nome"  />
+                        <input type="text" placeholder="Número do celular" name="celular" />
+                        <input type="text" placeholder="E-mail*" name="email"  />
+                        <textarea placeholder="Mensagem" name="mensagem"></textarea>
+                        <div>
+                            <input class="home" type="submit" value="Enviar Mensagem">
+                        </div>
+                    </form>
+                </div>
+            </div>
+    <div class="imagem">
+        <img src="imagem\contato.jpeg" alt="a imagem mostra varias pessoas conectadas a internet">
+    </div>
+    
+</div>
+</div>
+
+    
+    <script>
+
+      function textToAudio() {
+          let msg = document.body.innerText;
+          let speech = new SpeechSynthesisUtterance();
+          speech.lang = "pt-BR";
+          speech.text = msg;
+          speech.volume = 1;
+          speech.rate = 1;
+          speech.pitch = 1;
+          window.speechSynthesis.speak(speech);
+      }
+  </script>
+
+</body>
+
+</html>

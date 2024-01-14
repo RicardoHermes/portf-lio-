@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Inclusão Digital</title>
+    <meta name="description" content="Neste site abordaremos asuntos da importância e de como é feito a inclusão digital para pessoas com deficiencia ou sem acesso a informatica básica">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+
+      
+</head>
+
+<body>
+    <div class="header">
+        <div class="nav-bar">
+            <nav>
+                <button class="home" onclick="textToAudio()">Ler Texto</button>
+                <button class="home" onclick="window.location.href='pagina1.html'">O que é inclusão digital?</button>
+                <button class="home" onclick="window.location.href='pagina2.html'">Inclusão digital no Brasil e no mundo</button>
+                <button class="home" onclick="window.location.href='pagina3.html'">Contato | Fale conosco</button>
+              </nav>
+       
+            </div>
+    </div>
+     
+      
+        <h1>A inclusão digital é um direito de todos e um dever de todos.</h1>
+        
+        <div class="container-principal">
+            <div class="imagem">
+                <img src="imagem/inclusao_digital_todos2.jpeg" alt="Imagem mostrando várias pessoas com deficiencia ou não interligadas pela internet">
+            </div>
+           
+            <div class="texto">
+                <p>No entanto, sabemos que nem todos têm acesso às tecnologias digitais, seja por falta de infraestrutura, de recursos financeiros, de habilidades ou de conhecimento.
+                   Essa situação gera uma exclusão digital, que afeta principalmente as pessoas com deficiência e as pessoas de baixa renda, 
+                   que já enfrentam outras formas de discriminação e desigualdade social.</p>
+                
+                   <h3>A exclusão digital impede que essas pessoas possam usufruir dos benefícios do mundo digital, como:</h3>
+                <ul>
+                    <li >Acessar informações e serviços públicos e privados, como saúde, educação, cultura, transporte, segurança, entretenimento, etc.</li>
+                    <li>Comunicar-se com familiares, amigos, colegas e outras pessoas, por meio de redes sociais, aplicativos, e-mails, etc.</li>
+                    <li>Aprender novas habilidades e conhecimentos, por meio de cursos, tutoriais, vídeos, podcasts, etc.</li>
+                    <li>Trabalhar e gerar renda, por meio de plataformas, aplicativos, sites, etc.</li>
+                    <li>Expressar suas opiniões, ideias, sentimentos e criatividade, por meio de blogs, vlogs, podcasts, etc.</li>
+                    <li>Participar da vida política e social, por meio de votações, consultas, petições, manifestações, etc.</li>
+                </ul>
+          
+             
+                <p>Por isso, é fundamental promover a inclusão digital para pessoas com deficiência e baixa renda, para que elas possam ter mais autonomia, dignidade, qualidade de vida e desenvolvimento humano.</p>
+                <p>Esse é o objetivo do nosso site: mostrar a importância da inclusão digital para esses grupos, compartilhar experiências, dicas, recursos e iniciativas que possam facilitar e ampliar o acesso às tecnologias digitais, e estimular a participação e a colaboração de todos nessa causa.</p>
+                <p>Queremos que o nosso site seja um espaço de informação, conscientização, inspiração e mobilização, para que juntos possamos construir uma sociedade mais justa, inclusiva e digital para todos.</p>
+                
+
+            </div>
+      
+        </div>
+
+        <div class="container-meio">
+           
+            <div class="imagem">
+                <img src="imagem\inclusao_digital_todos.jpeg" alt="Imagem com pessoas de todas as etnias do mundo e deficiência conectadas a um dispositivo com acesso à internet " >
+            </div>
+            
+            <div class="div texto">
+                
+                <h2>Se você se identifica com essa proposta, Seja Bem-Vindo ao nosso site! Aqui você vai encontrar conteúdos sobre:</h2>
+                <ul>
+                    <li>O que é a inclusão digital e por que ela é importante para a sociedade e para a economia.</li>
+                    <li>Qual é o cenário da inclusão digital no Brasil e no mundo, quais são os desafios e as oportunidades que ela apresenta.</li>
+                    <li>Quais são as iniciativas e os projetos que promovem a inclusão digital, tanto do governo quanto da iniciativa privada e da sociedade civil.</li>
+                    <li>Quais são os benefícios e os impactos da inclusão digital para as pessoas, especialmente para as mais vulneráveis e excluídas socialmente.</li>
+                    <li>Como você pode participar e colaborar com a inclusão digital, seja como usuário, como produtor ou como difusor de conteúdo digital.</li>
+                </ul>
+                <p>Esperamos que você goste do nosso site e que ele seja útil para você. Se você tiver alguma dúvida, sugestão ou comentário, 
+                   entre em contato conosco. Estamos à disposição para ouvir você e melhorar o nosso trabalho.</p>
+   
+
+            </div>
+         
+
+        </div>
+  
+        <footer class="gray-background footer">
+            <div class="page-inner-countent footer-content">
+              <div class="download-options">
+                <p>Baixe nosso aplicativo</p>
+                <p>Baixe nosso aplicativo para Android e iOS</p>
+                <div>
+                    <img src="./imagem/play-store.png" alt=""/>
+                    <img src="./imagem/app-store.png" alt=""/>
+    
+                </div>
+              </div>  
+             
+              <div class="logo-footer">
+                <h1 class="logo">Digital | <span>E-commerce</span></h1>
+                <p>Nosso objetivo</p>
+              </div>
+              <div class="links-footer">
+               
+                <ul>
+                    <h3>Links úteis</h3>
+                    <li>Cupons</li>
+                    <li>Blog Post</li>
+                    <li>Políticas</li>
+                    <li>Torne-se afiliado</li>
+                </ul>
+    
+              </div>
+    
+            </div>
+            <hr class="page-inner-content"/>
+            <div class="page-inner-content copyrigth">
+                <p>Copyright 2024 | Ricardo Hermes | Todos Direitos Reservados</p>
+            </div>
+        </footer>
+      
+        <script>
+            function textToAudio() {
+                let msg = document.body.innerText;
+                let speech = new SpeechSynthesisUtterance();
+                speech.lang = "pt-BR";
+                speech.text = msg;
+                speech.volume = 1;
+                speech.rate = 1;
+                speech.pitch = 1;
+                window.speechSynthesis.speak(speech);
+            }
+        </script>
+    
+</body>
+</html>

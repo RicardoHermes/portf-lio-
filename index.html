@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portifólio - Ricardo Hermes</title>
+        <link rel="icon" href="public/images/logo-refatorando.png" type="image/x-icon">
+        <link rel="stylesheet" href="public/css/styles.css">
+        <script>
+            function showMenu () {
+                let menu = document.querySelector("nav").querySelector("ul");
+
+                if(menu.style.display ==="block"){
+                    menu.style.display="none";
+                }
+                else{
+                    menu.style.display="block"
+                }
+            }
+        </script>
+    </head>
+    
+    <body>
+        <div id="container">
+            <header id="header">
+                <nav>
+                    <img 
+                    src="./public/images/logo-refatorando.png" 
+                    alt="logo refatorando" height="40"
+                    />
+                    <ul>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#habilidades">HABILIDADES</a></li>
+                        <li><a href="#sobre">SOBRE</a></li>
+                        <li><a href="#projetos">PROJETOS</a></li>
+                        <li><a href="#contato">CONTATO </a></li>
+                      
+                    </ul>
+                    <img 
+                    gitid="menu-hamburger" 
+                    src="./public/images/icon-menu.svg" 
+                    width="40"
+                    onclick="showMenu"
+                    />
+                
+                </nav>         
+            </header>
+            
+            <div id="banner">
+                
+                <div id="banner-shadow">
+               
+                </div>
+                <h1>Ricardo Hermes</h1>
+            </div>
+            <div id="info">
+                <div id="sobre">
+                    <div class="title">Sobre Mim</div>
+                    <p>Sou um desenvolvedor Fullstack com habilidades abrangentes em desenvolvimento web fullstack.</p>
+                    <p></p>
+                    <p>Sou capaz de entregar projetos de alta qualidade que abrangem tanto o front-end quanto o back-end, garantindo excelência em todas as etapas do desenvolvimento.</p>
+                <div id="social">
+                    <a href="https://www.linkedin.com/in/ricardohermes1901/" target="_blank"><img src="./public/images/icon-linkedin.png"></a>
+                    <a href="https://github.com/RicardoHermes" target="_blank"><img src="./public/images/icon-github.png"></a>
+                    <a href="#"><img src="./public/images/icon-instagram.png" target="_blank"></a>
+                </div>
+                </div>
+                <div id="habilidades">
+                    <div id="resumo">
+                        <h3>Desenvolvedor Fullstack</h3> 
+                        <p>Com expertise Fullstack, proporciono projetos de alta qualidade, abrangendo front-end e back-end.</p>
+                        <a href="#contato"> Entrar em Contato</a>       
+                    </div>
+                    <h3>Habilidades</h3>
+                    <div class="tecnologia">
+                        <img src="./public/images/icon-html5.png" alt="icone html5">                       
+                        <div>
+                            <span>HTML</span>
+                        
+                            <div class="bar">
+                                <div style="width: 95%;"></div>
+                            </div>
+                        
+                        </div>
+                    </div>
+                    <div class="tecnologia">
+                        <img src="./public/images/icon-css3.png" alt="icone css3">                       
+                        <div>
+                            <span>CSS</span>
+                        
+                            <div class="bar">
+                                <div style="width: 82%;"></div>
+                            </div>
+                        
+                        </div>
+                    </div>
+                    <div class="tecnologia">
+                        <img src="./public/images/icon-javascript.png" alt="icone javascript">                       
+                        <div>
+                            <span>JavaScript</span>
+                        
+                            <div class="bar">
+                                <div style="width: 90%;"></div>
+                            </div>
+                        
+                        </div>
+                    </div>
+                    <div class="tecnologia">
+                        <img src="./public/images/icon-git.png" alt="icone github">                       
+                        <div>
+                            <span>Git & GitHub</span>
+                        
+                            <div class="bar">
+                                <div style="width: 75%;"></div>
+                            </div>
+                        
+                        </div>
+                    </div>
+                    <div class="tecnologia">
+                        <img src="./public/images/icon-typescript.png" alt="icone typescript">                       
+                        <div>
+                            <span>TypeScript</span>
+                        
+                            <div class="bar">
+                                <div style="width: 80%;"></div>
+                            </div>
+                        
+                        </div>
+                    </div>
+                    <div class="tecnologia">
+                        <img src="./public/images/icon-tailwind.png" alt="icone tailwind">                       
+                        <div>
+                            <span>tailwind</span>
+                        
+                            <div class="bar">
+                                <div style="width: 45%;"></div>
+                            </div>
+                        
+                        </div>
+                    </div>
+                    <div class="tecnologia">
+                        <img src="./public/images/icon-node.png" alt="icone nodejs">                       
+                        <div>
+                            <span>Node.js</span>
+                        
+                            <div class="bar">
+                                <div style="width: 89%;"></div>
+                            </div>
+                        
+                        </div>
+                    </div>
+                  </div>      
+            </div>
+           
+            <div id="projetos">
+                <div class="title">
+                    Projetos
+                </div>
+
+                <div id="galeria_projetos">
+                    <a href="./public/projeto_login/index.html" target="_blank"><img src="./public/images/projetos-login.png" alt="projetos-login"/></a>
+                    
+                    <a href="./public/projeto-todo-list" target="_blank"><img src="./public/images/projetos-todo-List.png" alt="projetos-todo-List"/></a>
+                    
+                    <a href="./public/pagina_tempo/API.html" target="_blank"><img src="./public/images/projetos-nft.png" alt="pagina-do-tempo"/></a>
+                   
+                    <a href="#"><img src="./public/images/projetos-agendamento.png" alt="projetos-agendamento"/></a>
+                   
+                    <a href="./public/site-acessibilidade/index.html"  target="_blank"><img src="./public/images/projetos-plataforma.png" alt="projetos-plataforma"/></a>
+                   
+                    <a href="./public/e-commerce/intex.html" target="_blank"><img src="./public/images/projetos-ecommerce.png" alt="projetos-ecommerce"/></a>
+
+                </div>
+                <div id="contato">
+                    <div class="title">Contato</div>
+                    <div id="container_formulario">
+                        <h4>Envie uma  mensagem:</h4>
+
+                        <form action="https://formsubmit.co/5f73cecd7eb213e87601f31da73f267c" method="POST">
+                            <input type="text" placeholder="Nome*" name="nome"  />
+                            <input type="text" placeholder="Número do celular" name="celular" />
+                            <input type="text" placeholder="E-mail*" name="email"  />
+                            <textarea placeholder="Mensagem" name="mensagem"></textarea>
+                            <div>
+                                <input type="submit" value="Enviar Mensagem">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+        </div>
+    </body>
+</html>
+
