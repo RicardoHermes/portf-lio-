@@ -227,7 +227,7 @@ input[type="submit"]:hover {
 .tecnologia img {
     width: 50px;
     height: 50px;
-    border-radius:15px;
+    border-radius: 15px;
 }
 
 .tecnologia > div {
@@ -375,17 +375,21 @@ h4 {
     #banner h1 {
         font-size: 46px;
         position: relative;
-        top: -100px;
+        top: -100;
         left: 25px;
-        width: calc(100%-50px); 
+        max-width: 390px;
     }
 
     #info {
         flex-direction: column;
+        width: max-content;
+        max-width: 390px;
+
     }
 
     #banner {
-        height: 300px;
+        max-width: 390px;
+
 
     }
     
@@ -418,7 +422,11 @@ h4 {
     }
 
     #container {
-        margin: 0px;
+        max-width: 390px;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+
     }
 
     h3,
@@ -432,6 +440,9 @@ h4 {
 
     body {
         letter-spacing: 1px;
+        margin: 0;
+        padding: 0;
+
 
     }
 
@@ -441,19 +452,17 @@ h4 {
 
     #galeria_projetos {
         flex-direction: column;
-        align-content: center;
+        align-items: center;
+        flex-direction: row;
+
     }
 
     #galeria_projetos > a > img {
-        max-width: 90vw;
+        flex-direction: row;
     }
 
     #menu-haburger {
         display: block;
     }
-
-
-
-
 
 }
